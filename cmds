@@ -1,0 +1,11 @@
+# Collection of useful commands
+
+##############
+# Networking #
+##############
+sudo tcpdump -vv -l -A net 10.0.0.0/8  # Very verbose TCP dump on everything on subnet 10.0.0.0/8
+ngrep -W byline port 80
+netstat -lnp  # get processes bound to ports
+netstat -anc  # ALL local connections
+lsof -i :PORT # List process bound to PORT
+

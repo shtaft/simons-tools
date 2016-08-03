@@ -1,0 +1,13 @@
+# Host BLAH
+#  User root
+#  StrictHostKeyChecking no
+#  UserKnownHostsFile /dev/null
+#  ForwardAgent yes   # Forward u/pw for bastions
+#  IdentityFile ~/.blah
+
+Host *
+    ControlMaster   auto
+    ControlPath     ~/.ssh/mux-%r@%h:%p
+    ControlPersist  15m
+    UseKeychain yes
+    AddKeysToAgent yes

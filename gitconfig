@@ -1,0 +1,6 @@
+[pull]
+	rebase = true
+
+[user]
+	name = Simon Taft
+	email = taft.simon@gmail.com
